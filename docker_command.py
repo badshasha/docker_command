@@ -15,3 +15,21 @@ docker kill id  # SIGKILL -> immediate kill the process
 
 # speialci not 
 #  but if process not working for stop it's automatically change to docker kill command 
+
+
+# some times we need different commands 
+# හිතන්න පළවෙනියට sever එක on කරනවා . 127.0.0.1
+# ඊට පස්සේ එකට command ලියනවා කියලා 
+# docker ඇතුලේ server run වෙනකොට අපිට වෙනවා අලුත් command ඉන්ජෙච්ට් කරන්න 
+
+docker exec -it contianerId  command
+
+
+without -it flag it's automatically terminal the secound command 
+
+
+# getting shell power 
+
+docker exec -it 43234ig432  sh  # provide full terminal power 
+#  exit usienr 
+ctrl + D 
