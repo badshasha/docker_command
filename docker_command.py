@@ -33,3 +33,11 @@ docker start -a f1d384d3cc47   # output ==> hi there
 
 
 # after you create docker container : you connot change command [docker  run  imagename   😖 command ]
+
+
+# delete all clearn the memory 
+docker system prune   # after you did this it's need to reinstall all the image that u user previously 
+
+# dont use fequently 
+# it's only use for some time that you really need to clean space 
+# or done work with docker 
