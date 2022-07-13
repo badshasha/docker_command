@@ -1,8 +1,20 @@
 # user an existing docker image as a base 
 FROM alpine 
+# WE WHAT TO USE BASE IMAGE fROM "ALIPINE" 
+
+    # WHAT IS BASE IMAGE    
+        # 
+
+# From ==>
+# RUN ==> what should we do in creating image
+# CMD ==> what should container need to do 
 
 # download and install a dependency 
 RUN apk add --update redis 
+
+# WE WATN TO RUN THIS COMMAND 
+    # apk => apachi package 
+    # 
 
 # tell the image what to do when it start 
 # as a contgainer 

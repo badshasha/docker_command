@@ -16,8 +16,16 @@ FROM node:alpine
 
 # container command 
 WORKDIR /usr/app
-COPY ./ ./   
+COPY ./package.json ./
 RUN npm install 
+COPY ./ ./     
+
+        # what we do ?? this is a simple speed up process 
+        # becue prevous comming all the package and index js copy usign one command [  copy ./ ./ ]
+        # if you change the source code [index.js] , docker chace memeory show there is a change in prevous step [copy ./ ./] 
+        # that means it's run again and install all the dependencies again 
+        # best thing to do device sourse code and package dependencies in to do [first package  then after copyt all the directory like show in command]
+
 
 
 
