@@ -1,0 +1,13 @@
+# base image 
+# FROM alpine  # contain very small dependencies 
+    # solution 1. first base image 
+              #2. try to install node on alpine  
+              
+              # *. why alphine it's a smallest version of docker [ nothing install hear ]
+FROM node:alpine  
+
+# container command 
+RUN npm install 
+
+# container run command 
+CMD ["npm","start"]
