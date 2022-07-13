@@ -1,0 +1,13 @@
+# basic image
+FROM node:alpine 
+
+# container 
+WORKDIR /usr/app
+
+
+COPY ./package.json ./
+RUN npm install 
+COPY ./ ./
+
+# container run command 
+CMD ["npm","start"]

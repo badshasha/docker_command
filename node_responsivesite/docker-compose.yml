@@ -1,0 +1,20 @@
+# docker automatically add the connection
+
+
+# virsotn of docker compost 
+version: '3'
+
+# mean = container type 
+services : 
+  # name custom
+  redis-server:
+      # from where  
+      image: 'redis'
+    
+    node-app:
+      # from current file 
+      build : .
+      # connet portal local machiane 4001
+      ports :
+         -"4001:8081"  
+
