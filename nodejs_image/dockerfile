@@ -6,8 +6,20 @@
               # *. why alphine it's a smallest version of docker [ nothing install hear ]
 FROM node:alpine  
 
+
+        # why error because docker is a snapshot or small space of hard drive 
+        # it's didnt know about the packege json and index json file 
+        # first we have to garanteed about it's in out snapshot 
+        # so we have to copy our file in  to  the container 
+
+
+
 # container command 
+WORKDIR /usr/app
+COPY ./ ./   
 RUN npm install 
+
+
 
 # container run command 
 CMD ["npm","start"]
