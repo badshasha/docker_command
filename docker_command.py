@@ -11,3 +11,5 @@ docker-compose up -d
 docker-compose down 
 
 
+# build docker file with docker file name
+docker build -f dockerfile.dev .
